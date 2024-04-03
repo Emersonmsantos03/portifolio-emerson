@@ -15,7 +15,8 @@ let Contact = () => {
                     <h3>Está pronto para </h3>
                     <h3><strong>impulsionar o seu negócio?</strong></h3>
                     </div>
-                    <a><button>Solicite o nosso contato!</button></a>
+                    <a href="https://forms.gle/R9P5suwnaox2E5DZ6"
+                     target='__blank'><button>Solicite o nosso contato!</button></a>
                     </div>
 
                     <div className='rocket-container'>
