@@ -1,0 +1,106 @@
+.about{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.about-img{
+    background-color: #333;
+    border-radius: 20px;
+    height: 27rem;
+    width: 27rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #0078ED solid 1px;
+}
+
+
+
+.about-img img{
+    height: 23rem;
+    
+}
+
+.about-texts{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+.about-texts h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about-texts h3{
+    font-size: 1.3rem;
+}
+
+.about-texts p{
+    color: #fff;
+    font-weight: 100;
+    line-height: 1.3rem;
+}
+
+.about-titles{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-icons{
+    display: flex;
+    width: 5rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about-icons img{
+    height: 30px;
+}
+
+.me{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        margin-top: 10rem;
+        flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
+        gap: 5rem; /* Reduz o espaçamento entre os elementos */
+        height: auto; /* Altura automática para acomodar o conteúdo */
+    }
+
+    .about-img {
+        height: 20rem; /* Reduz a altura da imagem */
+        width: 20rem; /* Reduz a largura da imagem */
+    }
+
+    .about-texts {
+        width: 80%; /* Ajusta a largura do texto para ocupar mais espaço na tela */
+    }
+
+    .about-icons {
+        gap: 1rem; /* Reduz o espaçamento entre os ícones */
+    }
+
+    .about-img img{
+        height: 20rem;
+        
+    }
+
+}

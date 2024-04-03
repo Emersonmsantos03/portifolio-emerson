@@ -1,0 +1,152 @@
+.landingpage{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    
+    
+}
+
+.lp-texts{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 2rem;
+    height: 25rem;
+}
+
+.lp-texts h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.lp-texts p{
+    line-height: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.lp-image img{
+   height: 25rem;
+}
+
+.landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10rem;
+}
+
+.lp-button button{
+    background-color: transparent;
+    border: solid 1px #0078ED;
+    color: #f4f4f4;
+    transition: 1s ease;
+    width: 25rem;
+    height: 3rem;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.lp-button button:hover{
+background-color: #0078ED;
+transition: 1s ease;
+   
+}
+
+.lp-button a{
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .landingpage {
+        display: flex;
+        height: auto; /* Altura automática para acomodar o conteúdo */
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem; /* Reduz a margem superior */
+         
+    }
+    
+    .lp-texts {
+        display: flex;
+        flex-direction: column;
+        width: 80%; /* Ajusta a largura do texto para ocupar mais espaço na tela */
+        gap: 2rem;
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    .lp-texts h1 {
+        font-size: 1.8rem; /* Reduz o tamanho da fonte */
+        font-weight: 700;
+    }
+    
+    .lp-texts p {
+        line-height: 1.5rem; /* Ajusta a altura da linha */
+        font-size: 1.2rem; /* Reduz o tamanho da fonte */
+        font-weight: 300;
+    }
+    
+    .lp-image img {
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+        height: auto;
+         /* Altura automática para manter a proporção da imagem */
+    }
+
+    .lp-image{
+        padding: 0 4px;
+    }
+    
+    .landing {
+        display: flex;
+        flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 5rem; /* Reduz o espaçamento entre os elementos */
+        margin-top: 5rem; /* Reduz a margem superior */
+    }
+    
+    .lp-button button {
+        background-color: transparent;
+        border: solid 1px #0078ED;
+        color: #f4f4f4;
+        transition: 1s ease;
+        width: 20rem; 
+        height: 3rem;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem; /* Reduz a margem superior */
+    }
+    
+    .lp-button button:hover {
+        background-color: #0078ED;
+        transition: 1s ease;
+    }
+    
+    .lp-button a {
+        color: #f4f4f4;
+        font-size: 1.2rem; /* Reduz o tamanho da fonte */
+    }
+}
+
+
+

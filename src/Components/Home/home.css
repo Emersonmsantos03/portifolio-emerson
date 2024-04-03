@@ -1,0 +1,81 @@
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url('/public/images/Desktop\ -\ Home\ Page.jpg');
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+
+}
+
+.home-texts{
+    color: #f4f4f4;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    width: 40%;
+    margin-top: 10rem;
+
+}
+
+
+.home-button button{
+    color: #f4f4f4;
+    width: 20rem;
+    height: 3rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: #f4f4f4 2px solid;
+    transition: 1s ease;
+    text-decoration: none;
+}
+
+.home-button button:hover{
+    transition: 1s ease;
+    border: #0078ED 2px solid;
+    background-color: #333;
+
+
+}
+
+.home-button a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .home {
+        height: 100vh; /* Altura automática para acomodar o conteúdo */
+        background-image: url('/public/images/Desktop\ -\ Home\ Page.jpg');
+        background-repeat: none;
+        background-position: 40%;
+
+    }
+
+    .home-texts {
+        font-size: 2.3rem; /* Reduzir o tamanho da fonte */
+        width: 80%; /* Ajustar a largura para ocupar mais espaço na tela */
+        margin-top: 3rem;
+        color: #f4f4f4; /* Reduzir a margem superior */
+        
+    }
+
+   
+    .home-button button {
+        width: 20rem; /* Ajustar a largura para ocupar mais espaço na tela */
+        height: 3.5rem; /* Aumentar a altura do botão */
+        font-size: 1.2rem;
+         background-color: #333;
+         border: #0078ED solid 2px;
+         
+    }
+}
+
+

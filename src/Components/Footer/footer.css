@@ -1,0 +1,203 @@
+.footer{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 5rem;
+    background-color: #171C28;
+    opacity: 100%;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px ;
+    
+    
+}
+
+.footer-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.footer a{
+    color:#0078ED; ;
+}
+
+.logo-img{
+    width: 15%;
+}
+.logo-img img{
+    height: 7rem;
+    margin-bottom: 5rem; 
+    opacity: 100%;
+}
+
+.contact-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 15%;
+    opacity: 100%;
+
+}
+.contact-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-icons h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.contact-icons img{
+    
+    height: 1.8rem;
+    width: 1.8rem;
+
+}
+
+.navigation h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 15%;
+
+}
+.navigation-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.navigation-texts a{
+    font-weight: 100;
+}
+
+.rights{
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        height: auto; /* Altura automática para acomodar o conteúdo */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
+        gap: 2rem; /* Reduz o espaçamento entre os elementos */
+        margin-top: 5rem;
+        background-color: #171C28;
+        border-top-left-radius: 0; /* Remove os cantos arredondados na parte superior */
+        border-top-right-radius: 0; /* Remove os cantos arredondados na parte superior */
+    }
+    
+    .footer-container {
+        height: auto; /* Altura automática para acomodar o conteúdo */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
+        gap: 2rem; /* Reduz o espaçamento entre os elementos */
+        margin-top: 2rem; /* Reduz a margem superior */
+    }
+    
+    .footer a {
+        color: #0078ED;
+    }
+    
+    .logo-img {
+        width: 30%; /* Reduz a largura da imagem */
+    }
+    
+    .logo-img img {
+        height: 5rem; /* Reduz a altura da imagem */
+        margin-bottom: 2rem; /* Reduz o espaço entre a imagem e o texto abaixo */
+    }
+    
+    .contact-icons {
+        display: flex;
+        flex-direction: column; /* Altera a direção do flex para distribuir horizontalmente */
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; /* Reduz o espaçamento entre os ícones */
+        margin-top: 2rem; /* Reduz a margem superior */
+        width: 100%; /* Largura total para ocupar todo o espaço disponível */
+    }
+    
+    .contact-icons h3 {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte */
+        margin-bottom: 1rem; /* Reduz o espaço entre o título e os ícones */
+    }
+    
+    .contact-icons img {
+        height: 1.5rem; /* Reduz a altura dos ícones */
+        width: 1.5rem; /* Reduz a largura dos ícones */
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column; /* Altera a direção do flex para distribuir horizontalmente */
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem; /* Reduz o espaçamento entre os itens de navegação */
+        margin-top: 2rem; /* Reduz a margem superior */
+        width: 100%; /* Largura total para ocupar todo o espaço disponível */
+    }
+    
+    .navigation h3 {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte */
+        margin-bottom: 1rem; /* Reduz o espaço entre o título e os itens de navegação */
+    }
+    
+    .navigation-texts {
+        display: flex;
+        flex-direction: row; /* Altera a direção do flex para distribuir horizontalmente */
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; /* Reduz o espaçamento entre os itens de navegação */
+    }
+    
+    .navigation-texts a {
+        font-weight: 100;
+    }
+    
+    .rights {
+        margin-bottom: 2rem; /* Reduz a margem inferior */
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+    .contact-icon{
+        flex-direction: row;
+    }
+    
+    /* Media query para dispositivos móveis */
+}

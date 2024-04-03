@@ -1,0 +1,35 @@
+.portifolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 7rem;
+    height: 190vh;
+}
+
+.portifolio h3{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .portifolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 5rem; /* Reduz o espaçamento entre os elementos */
+        height: auto; /* Altura automática para acomodar o conteúdo */
+        padding: 0 1rem; 
+        margin-top: 10rem;
+    }
+    
+    .portifolio h3 {
+        font-size: 2rem; /* Reduz o tamanho da fonte */
+        font-weight: 600;
+    }
+    
+
+}
