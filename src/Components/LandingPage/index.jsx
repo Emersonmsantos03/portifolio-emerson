@@ -19,7 +19,7 @@ let LandingPage = () => {
             </div>
             </div>
             <div className='lp-button'>
-            <a><button>Garanta já a sua!</button></a>
+            <a target='__blank' href="https://wa.me/5541998870232?text=Ol%C3%A1%20Emerson,%20gostaria%20de%20saber%20mais%20sobre%20uma%20Landing%20Page!"><button>Garanta já a sua!</button></a>
             </div>
 
             
