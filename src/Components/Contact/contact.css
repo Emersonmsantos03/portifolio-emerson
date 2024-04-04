@@ -3,11 +3,10 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding: 0 10rem;
-    
-}
-
-.business{
+    padding-top: 10rem;
+  }
+  
+  .business {
     height: 100%;
     display: flex;
     padding: 0 4rem;
@@ -17,23 +16,24 @@
     align-items: center;
     gap: 4rem;
     margin-top: 2rem;
-}
-
-.business-texts{
+  }
+  
+  .business-texts {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-.business h3{
+  }
+  
+  .business h3 {
     font-size: 3rem;
     font-weight: 700;
     width: 40rem;
     display: flex;
     text-align: start;
-}
-
-.business button{
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .business button {
     background-color: transparent;
     border: solid 1px #0078ED;
     color: #f4f4f4;
@@ -46,14 +46,14 @@
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
-}
-
-.business button:hover{
+  }
+  
+  .business button:hover {
     background-color: #0078ED;
     transition: 1s ease;
-}
-
-.rocket-container{
+  }
+  
+  .rocket-container {
     display: flex;
     width: 50%;
     align-items: center;
@@ -61,81 +61,92 @@
     flex-direction: column;
     gap: 2rem;
     margin-top: 10rem;
-}
-
-.rocket{
+  }
+  
+  .rocket {
     height: 20rem;
-}
-
-
-@media only screen and (max-width: 768px) {
+  }
+  
+  @media only screen and (max-width: 768px) {
     .contact {
-        height: auto; /* Altura automática para acomodar o conteúdo */
-        display: flex;
-        justify-content: center;
-        flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
-        padding: 0 2rem; 
-        margin-top: 10rem;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 2rem;
+      margin-top: 10rem;
     }
-    
+  
     .business {
-        height: auto; /* Altura automática para acomodar o conteúdo */
-        display: flex;
-        padding: 0; /* Remove o preenchimento */
-        width: 100%; /* Largura total para ocupar todo o espaço disponível */
-        flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
-        justify-content: center;
-        align-items: center;
-        gap: 3rem; /* Reduz o espaçamento entre os elementos */
-        margin-top: 2rem;
+      height: auto;
+      display: flex;
+      padding: 0;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      margin-top: 2rem;
     }
-    
+  
     .business-texts {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
     }
-    
+  
     .business h3 {
-        font-size: 2rem; /* Reduz o tamanho da fonte */
-        font-weight: 700;
-        width: 100%; /* Largura total para ocupar todo o espaço disponível */
-        text-align: start; /* Centraliza o texto */
+      font-size: 2rem;
+      font-weight: 700;
+      width: 100%;
+      text-align: start;
     }
-    
+  
     .business button {
-        background-color: transparent;
-        border: solid 1px #0078ED;
-        color: #f4f4f4;
-        transition: 1s ease;
-        width: 100%; /* Largura total para ocupar todo o espaço disponível */
-        height: 3rem;
-        align-items: center;
-        text-align: center;
-        font-weight: 500;
-        display: flex;
-        justify-content: center;
-        font-size: 1.2rem;
+      background-color: transparent;
+      border: solid 1px #0078ED;
+      color: #f4f4f4;
+      transition: 1s ease;
+      width: 100%;
+      height: 3rem;
+      align-items: center;
+      text-align: center;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      font-size: 1.2rem;
     }
-    
+  
     .business button:hover {
-        background-color: #0078ED;
-        transition: 1s ease;
+      background-color: #0078ED;
+      transition: 1s ease;
     }
-    
+  
     .rocket-container {
-        display: flex;
-        width: 100%; /* Largura total para ocupar todo o espaço disponível */
-        align-items: center;
-        justify-content: center;
-        flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
-        gap: 2rem;
-        margin-top: 5rem; /* Reduz a margem superior */
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 5rem;
     }
-    
+  
     .rocket {
-        height: 15rem; /* Reduz a altura do foguete */
-        max-width: 100%; /* Garante que o foguete não ultrapasse a largura do contêiner pai */
+      height: 15rem;
+      max-width: 100%;
     }
+  }
+  
+  .animate-entry {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  
+  .contact.animate-entry {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s ease, transform 1s ease;
+  }
 
-}
+  

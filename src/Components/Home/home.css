@@ -8,16 +8,25 @@
     align-items: center;
     text-align: center;
     gap: 10rem;
+    
+
+}
+
+.home h1{
+    font-family: "Poly", serif;
+    font-size: 56px;
+    width: 80rem;
+    line-height: 3rem;
 
 }
 
 .home-texts{
     color: #f4f4f4;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
     font-size: 3rem;
     width: 40%;
     margin-top: 10rem;
+    display: flex;
+    
 
 }
 
@@ -65,6 +74,11 @@
         margin-top: 3rem;
         color: #f4f4f4; /* Reduzir a margem superior */
         
+    }
+
+    .home h1{
+        font-size: 2rem;
+        line-height: 2.3rem;
     }
 
    

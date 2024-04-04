@@ -5,12 +5,13 @@
     align-items: center;
     text-align: center;
     gap: 7rem;
-    height: 190vh;
+    height: 150vh;
 }
 
 .portifolio h3{
     font-size: 3rem;
     font-weight: 600;
+    font-family: "Raleway", sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
@@ -21,9 +22,9 @@
         align-items: center;
         text-align: center;
         gap: 5rem; /* Reduz o espaçamento entre os elementos */
-        height: auto; /* Altura automática para acomodar o conteúdo */
-        padding: 0 1rem; 
+        height: auto;  
         margin-top: 10rem;
+        width: 100%;
     }
     
     .portifolio h3 {
@@ -31,5 +32,4 @@
         font-weight: 600;
     }
     
-
 }

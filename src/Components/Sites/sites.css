@@ -1,4 +1,4 @@
-.projects-container{
+.projects-container {
     height: 85vh;
     width: 100%;
     display: flex;
@@ -7,10 +7,15 @@
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    
+    opacity: 0;
 }
 
-.projects-container a{
+.projects-container.animate-entry {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.projects-container a {
     height: 50%;
     width: auto;
     display: flex;
@@ -19,89 +24,81 @@
     align-items: center;
 }
 
-.project{
+.project {
     height: 100%;
     width: 100%;
     position: relative;
-    
-   
 }
 
-.project img{
+.project img {
     height: 100%;
     width: 707px;
     transition: 1s ease;
-
 }
 
-.project img:hover{
+.project img:hover {
     filter: blur(1px);
     transition: 1s ease;
 }
 
-.tarja{
-    position: absolute; /* Adiciona posicionamento absoluto */
-    bottom: 0; /* Posiciona a tarja na parte inferior do contêiner pai */
-    left: 0; /* Alinha a tarja à esquerda do contêiner pai */
-    width: 100%; /* Garante que a tarja ocupe toda a largura do contêiner pai */
-    background-color:#0078ED;
+.tarja {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0078ED;
     opacity: 0;
     height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 1s ease; /* Transição de 1 segundo para a opacidade */
-    
-
+    transition: opacity 1s ease;
 }
 
 .project:hover .tarja {
-display: flex;
-opacity: 100%;
+    display: flex;
+    opacity: 100%;
 }
 
-
-
-.tarja h4{
+.tarja h4 {
     text-decoration: none;
     color: #f4f4f4;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-
 @media only screen and (max-width: 768px) {
     .projects-container {
-        height: auto; /* Altura automática para acomodar o conteúdo */
+        height: auto;
         width: 100%;
         display: flex;
-        flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 3rem; /* Reduz o espaçamento entre os elementos */
+        gap: 3rem;
+        text-align: center;
     }
     
     .projects-container a {
-        height: auto; /* Altura automática para acomodar o conteúdo */
-        width: 100%; /* Largura total para ocupar todo o espaço disponível */
+        height: auto;
+        width: 100%;
         display: flex;
-        flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
     .project {
-        height: auto; /* Altura automática para acomodar o conteúdo */
-        width: 100%; /* Largura total para ocupar todo o espaço disponível */
-        position: relative;
+        height: auto;
+        width: 100%;
+        display: flex;
     }
     
     .project img {
-        width: 100%; /* Largura total para ocupar todo o espaço disponível */
-        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+        width: 100%;
+        max-width: 100%;
         transition: 1s ease;
     }
-    
     
     .tarja {
         position: absolute;
@@ -114,7 +111,6 @@ opacity: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
     
     .project:hover .tarja {
@@ -127,6 +123,4 @@ opacity: 100%;
         font-size: 1rem;
         font-weight: 600;
     }
-    
-
 }

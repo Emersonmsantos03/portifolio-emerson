@@ -1,13 +1,22 @@
 .landingpage{
     display: flex;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+    padding-top: 0;
+
     
     
+}
+.landingpage.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .lp-texts{
@@ -21,6 +30,7 @@
 .lp-texts h1{
     font-size: 2.5rem;
     font-weight: 700;
+    font-family: "Raleway", sans-serif;
 }
 
 .lp-texts p{
@@ -79,7 +89,7 @@ transition: 1s ease;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem; /* Reduz a margem superior */
+        margin-top: 2rem; /* Reduz a margem superior */
          
     }
     

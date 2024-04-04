@@ -1,14 +1,27 @@
-.about{
-    height: 80vh;
-    width: 100%;
+.about {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10rem;
+    height: 70vh;
+    padding-top: 15rem;
+    
 }
 
-.about-img{
+
+.me, .about-texts {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.me.visible, .about-texts.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about-img {
     background-color: #333;
     border-radius: 20px;
     height: 27rem;
@@ -16,17 +29,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: #0078ED solid 1px;
+    border: 1px solid #0078ED;
 }
 
-
-
-.about-img img{
+.about-img img {
     height: 23rem;
-    
 }
 
-.about-texts{
+.about-texts {
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -34,73 +44,72 @@
     margin-bottom: 3.5rem;
 }
 
-.about-texts h2{
+.about-texts h2 {
     font-size: 2rem;
     font-weight: 700;
+    font-family: "Raleway", sans-serif;
 }
 
-.about-texts h3{
+.about-texts h3 {
     font-size: 1.3rem;
 }
 
-.about-texts p{
+.about-texts p {
     color: #fff;
     font-weight: 100;
     line-height: 1.3rem;
 }
 
-.about-titles{
+.about-titles {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.about-icons{
+.about-icons {
     display: flex;
     width: 5rem;
     gap: 1.5rem;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.about-icons img{
+.about-icons img {
     height: 30px;
 }
 
-.me{
+.me {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
 }
+
 
 @media only screen and (max-width: 768px) {
     .about {
         margin-top: 10rem;
-        flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
-        gap: 5rem; /* Reduz o espaçamento entre os elementos */
-        height: auto; /* Altura automática para acomodar o conteúdo */
+        flex-direction: column;
+        gap: 5rem;
+        height: auto;
+        margin: 5rem 0;
     }
 
     .about-img {
-        height: 20rem; /* Reduz a altura da imagem */
-        width: 20rem; /* Reduz a largura da imagem */
+        height: 20rem;
+        width: 20rem;
     }
 
     .about-texts {
-        width: 80%; /* Ajusta a largura do texto para ocupar mais espaço na tela */
+        width: 80%;
     }
 
     .about-icons {
-        gap: 1rem; /* Reduz o espaçamento entre os ícones */
+        gap: 1rem;
     }
 
-    .about-img img{
+    .about-img img {
         height: 20rem;
-        
     }
-
 }
