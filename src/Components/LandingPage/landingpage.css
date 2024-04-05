@@ -41,6 +41,7 @@
 
 .lp-image img{
    height: 25rem;
+   border-radius: 20px;
 }
 
 .landing{
@@ -53,8 +54,7 @@
 }
 
 .lp-button button{
-    background-color: transparent;
-    border: solid 1px #0078ED;
+    background-color:#00275D;
     color: #f4f4f4;
     transition: 1s ease;
     width: 25rem;
@@ -89,7 +89,7 @@ transition: 1s ease;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 2rem; /* Reduz a margem superior */
+        margin-top: 0rem; /* Reduz a margem superior */
          
     }
     

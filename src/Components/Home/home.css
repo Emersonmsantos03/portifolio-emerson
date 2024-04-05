@@ -33,7 +33,7 @@
 
 .home-button button{
     color: #f4f4f4;
-    width: 20rem;
+    width: 24rem;
     height: 3rem;
     font-family: 'Inter', sans-serif;
     font-size: 1.4rem;
@@ -41,16 +41,15 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
-    border: #f4f4f4 2px solid;
+    background-color:#00275D;
     transition: 1s ease;
     text-decoration: none;
 }
 
 .home-button button:hover{
     transition: 1s ease;
-    border: #0078ED 2px solid;
-    background-color: #333;
+
+    background-color:  #0078ED;
 
 
 }
@@ -86,8 +85,7 @@
         width: 20rem; /* Ajustar a largura para ocupar mais espaço na tela */
         height: 3.5rem; /* Aumentar a altura do botão */
         font-size: 1.2rem;
-         background-color: #333;
-         border: #0078ED solid 2px;
+         background-color:#00275D;
          
     }
 }

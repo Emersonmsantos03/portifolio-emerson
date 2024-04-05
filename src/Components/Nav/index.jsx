@@ -20,7 +20,7 @@ const Nav = () => {
                     <a href='#about'>Sobre mim</a>
                     <a href='#lp'>Landing Page</a>
                     <a href='#portifolio'>Portifólio</a>
-                    <a href='#contact'>Contato</a>
+                    <a href='#contactt'>Contato</a>
                 </div>
 
                 <div className='contact-button'>
@@ -35,7 +35,7 @@ const Nav = () => {
                         <a href='#about'>Sobre mim</a>
                         <a href='#lp'>Landing Page</a>
                         <a href='#portifolio'>Portifólio</a>
-                        <a href='#contact'>Contato</a>
+                        <a href='#contactt'>Contato</a>
                     </div>
                 </div>
             )}

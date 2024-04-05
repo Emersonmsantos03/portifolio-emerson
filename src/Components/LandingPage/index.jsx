@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './landingpage.css';
-import lp from '/public/images/lp.png';
+import lp from '/public/images/lp.jpg';
 
 const LandingPage = () => {
     const [isVisible, setIsVisible] = useState(false);

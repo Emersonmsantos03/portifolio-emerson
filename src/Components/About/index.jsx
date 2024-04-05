@@ -23,8 +23,6 @@ const About = () => {
 
     return (
         <section className='about' id='about'>
-
-           
             <div className={`me ${isVisible ? 'visible' : ''}`} ref={ref}>
                 <div className='about-img'>
                     <img src={profile} alt="Emerson" />

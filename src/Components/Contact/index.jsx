@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <Element name="contact">
-      <section className="contact">
+      <section className="contact" id="contactt">
         <div className="business">
           <div className={`business-texts ${isVisible ? "animate-entry" : ""}`}>
             <h3>Está pronto para </h3>

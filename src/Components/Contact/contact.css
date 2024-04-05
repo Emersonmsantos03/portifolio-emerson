@@ -34,8 +34,7 @@
   }
   
   .business button {
-    background-color: transparent;
-    border: solid 1px #0078ED;
+    background-color:#00275D;
     color: #f4f4f4;
     transition: 1s ease;
     width: 25rem;
